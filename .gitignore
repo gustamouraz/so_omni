@@ -1,0 +1,13 @@
+build/
+output/
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Ferramentas e diagnósticos locais
+.agents/
+.tmp-device-specs/
+tmp/
+.env
+.env.*

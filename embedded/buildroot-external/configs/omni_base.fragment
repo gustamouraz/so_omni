@@ -1,0 +1,11 @@
+# Merge into the defconfig supplied by the board/BSP vendor.
+BR2_INIT_BUSYBOX=y
+BR2_PACKAGE_DBUS=y
+BR2_PACKAGE_CONNMAN=y
+BR2_PACKAGE_WPA_SUPPLICANT=y
+BR2_PACKAGE_BLUEZ5_UTILS=y
+BR2_PACKAGE_ALSA_UTILS=y
+BR2_PACKAGE_GPSD=y
+BR2_PACKAGE_OMNI_CORE=y
+BR2_ROOTFS_OVERLAY="$(BR2_EXTERNAL_OMNI_PATH)/board/omni/rootfs-overlay"
+BR2_ROOTFS_DEVICE_TABLE="system/device_table_dev.txt $(BR2_EXTERNAL_OMNI_PATH)/board/omni/device_table.txt"

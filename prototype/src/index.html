@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#181818">
+  <title>SO Omni</title>
+  <link rel="icon" type="image/png" href="/branding/omni-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<main class="head-unit" aria-label="Central SO Omni">
+  <header class="status-bar">
+    <button class="brand" data-tab="map" aria-label="Abrir tela inicial">
+      <img class="brand-logo" src="/branding/omni-icon.png" alt="">
+      <span>OMNI</span>
+    </button>
+    <div class="status-actions">
+      <button id="wifi" class="status-button" aria-pressed="true" aria-label="Alternar Wi-Fi">◉ <b>Wi-Fi</b></button>
+      <button id="bluetooth" class="status-button" aria-pressed="true" aria-label="Alternar Bluetooth">ᛒ <b>Bluetooth</b></button>
+      <div class="datetime" aria-label="Data e hora">
+        <span id="date">Qua, 22/07</span>
+        <time id="clock">09:41</time>
+      </div>
+    </div>
+  </header>
+
+  <section id="workspace" class="workspace" aria-live="polite"></section>
+
+  <nav class="dock" aria-label="Aplicativos principais">
+    <button data-tab="map"><span>⌖</span>Mapa</button>
+    <button data-tab="media"><span>♫</span>Mídia</button>
+    <button data-tab="phone"><span>☏</span>Telefone</button>
+    <button data-tab="apps"><span>▦</span>Apps</button>
+    <button data-tab="settings"><span>⚙</span>Ajustes</button>
+  </nav>
+</main>
+<div id="toast" class="toast" role="status" aria-live="assertive"></div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

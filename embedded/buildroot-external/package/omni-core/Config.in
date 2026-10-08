@@ -1,0 +1,5 @@
+config BR2_PACKAGE_OMNI_CORE
+	bool "omni-core"
+	depends on BR2_USE_MMU
+	help
+	  Lightweight state and safety-rules process for the SO Omni head unit.
